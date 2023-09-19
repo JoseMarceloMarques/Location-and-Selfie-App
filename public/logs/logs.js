@@ -13,7 +13,7 @@ async function getData() {
 
     mood.textContent = `Mood: ${item.mood}`;
     geo.textContent = `Latitude: ${item.lat}, Longitude: ${item.lon}`;
-    const dateString = new Date(item.timestamp).toLocaleDateString();
+    const dateString = new Date(item.timestamp).toLocaleString();
     date.textContent = `Date: ${dateString}`;
     image.src = item.image64;
     image.alt = "Selfie of the moment";
